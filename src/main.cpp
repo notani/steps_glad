@@ -79,8 +79,8 @@ int main (int argc, char *argv[])
 
     cmdline::parser p;
     p.add<int>("mode", 'm',
-               "mode flag with int value: 0..5", false,
-               0, cmdline::range(1, 4));
+               "mode flag with int value: 1..4", false,
+               3, cmdline::range(1, 4));
     p.add<std::string>("prefix", 'p',
                        "prefix of output filenames (including dirname)",
                        false, "");

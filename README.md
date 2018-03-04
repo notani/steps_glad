@@ -24,10 +24,9 @@ For questions and comments, plase contact Naoki Otani at: otani.naoki.65v@st.kyo
     * `./configure (--prefix={target dir})`
     * `make`
     * `make install`
-2. Modify Makefile to point to the locations of the GSL.
-3. Run make.
-4. You may have to set `LD_LIBRARY_PATH` or `DYLD_LIBRARY_PATH` to point to the GSL and CBLAS libraries.
-5. Run the demo `./bin/glad_steps data/data_steps.txt`.
+2. Modify Makefile to point to the locations of the GSL if needed.
+3. `cd src && make && cd ../`.
+4. Run the demo `./bin/steps_glad data/sample_labels.dat data/sample_hierarchy.dat`.
 
 
 ## Input ##
